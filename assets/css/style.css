@@ -1,0 +1,139 @@
+.banner{
+	background-color: #e0e0e0;
+}
+table td{
+	border-bottom: 1px solid #c2c2c2;
+}
+.last-anuncios{
+	table-layout: fixed;
+}
+.publicar{
+	position: absolute;
+	width: 100px;
+	margin-left: -50px;
+	left: 50%;
+}
+.anuncio-fotos{
+	background-color: #d9d9d9;
+}
+.foto-div{
+	background-color: white;
+	width: 175px;
+	display: inline-block;
+}
+.foto-div img{
+	margin-left: -1px;
+	width: 175px;
+}
+.foto-div a{
+	margin-bottom: -1px;
+	margin-left: -1px;
+	margin-top: 5px;
+	border-radius: 0;
+	width: 175px;
+	transition: background-color color;
+}
+.foto-div a:hover{
+	color: white!important;
+}
+.back{
+	background-color: #dbdbdb;
+}
+#slide{
+	width: 80%;
+}
+.indicators li{
+	background-color: rgba(23, 164, 186, 0.7);
+}
+.indicators li:hover{
+	background-color: rgba(23, 164, 186, 1);
+}
+.indicators
+.active:hover{
+	background-color: #c9c9c9;
+}
+.slide-icon{
+	font-size: 32px;
+	color: rgba(23, 164, 186, 0.9)!important;
+}
+.slide-icon:hover{
+	color: #13889a;
+}
+.produto-info{
+	margin-top: 75px;
+}
+.produto-info small{
+	color:#858585;
+}
+.preco{
+	width: 275px;
+	position: absolute;
+	left: -75px;
+	top: -15px;
+}
+.tri{
+	border-color: transparent rgba(23, 164, 186, 0.8) transparent transparent;
+	border-style: solid;
+	border-width: 37.5px;
+	width: 0;
+	height: 0;
+	float: left;
+}
+.rec{
+	width: 200px;
+	height: 75px;
+	background-color: rgba(23, 164, 186, 0.8);
+	text-align: center;
+	vertical-align: center;
+	line-height: 75px;
+	color: white;
+	font-size: 26px;
+	display: inline;
+	float: right;
+}
+
+.anunciante{
+	width: 60%;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 25px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	border: 1px solid rgba(23, 164, 186, 0.3);
+	background-color: #cccccc;
+}
+
+.descricao{
+	word-wrap: break-word;
+}
+.descricao p{
+	white-space: pre-wrap;
+}
+.filter-button{
+	padding:0;
+	width: 77px;
+	height: 30px;
+	text-align: center;
+	vertical-align: center;
+	line-height: 30px;
+}
+@media only screen and (max-width: 768px){
+	.preco{
+		position: initial;
+		float: right;
+		margin-top: 60px;
+		margin-right: 70px;
+	}
+	.grid1{
+		margin-left: 90px;
+	}
+	#slide{
+		max-width: 500px;
+	}
+	.anunciante{
+		margin: 0;
+		margin-left: 100px;
+	}
+	.produto-info{
+	}
+}
