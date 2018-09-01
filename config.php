@@ -1,11 +1,14 @@
 <?php
 require 'environment.php';
+require 'assets/engines/smarty/smarty-3.1.32/libs/smarty.class.php';
+$smarty = new Smarty();
+global $smarty;
 
 $config = array();
 
 if(ENVIRONMENT == 'development'){
 	//conexao com o banco de dados local
-	define("BASE_URL", "http://projeto1.pc/");
+	define("BASE_URL", "http://projeto2.pc/");
 	$config['dbname'] = 'teste';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';

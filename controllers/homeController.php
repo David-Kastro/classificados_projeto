@@ -38,6 +38,7 @@ class homeController extends controller{
 		$dados['qtd_anuncios'] = $qtd_anuncios;
 		$dados['anuncio_page'] = $anuncioPerPage;
 		$dados['max_pages'] = $max_pages;
+		$dados['base_url'] = BASE_URL;
 		$dados['p'] = $p;
 
 		$this->loadTemplate('home', $dados);
