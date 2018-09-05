@@ -12,7 +12,7 @@ class controller{
 	}
 
 	public function loadViewInTemplate($viewName, $viewData = array()){
-		if($viewName == 'home'){
+		if($viewName == 'home' || $viewName == 'produto'){
 			global $smarty;
 			foreach ($viewData as $key => $value) {
 				$smarty->assign($key, $value);

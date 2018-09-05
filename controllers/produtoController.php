@@ -23,6 +23,7 @@ class produtoController extends controller{
 		$dados['anuncio'] = $anuncio;
 		$dados['usuario'] = $usuario;
 		$dados['qtd_images'] = $qtd_images;
+		$dados['base_url'] = BASE_URL;
 
 		$this->loadTemplate("produto", $dados);
 
