@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'vendor/autoload.php';
 require 'config.php';
 
 spl_autoload_register(function($class){
@@ -16,6 +17,9 @@ spl_autoload_register(function($class){
 	}
 
 });
+
+$smarty = new Smarty();
+global $smarty;
 
 $core = new Core();
 $core->run();

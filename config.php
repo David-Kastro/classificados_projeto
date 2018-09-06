@@ -1,8 +1,5 @@
 <?php
 require 'environment.php';
-require 'assets/engines/smarty/smarty-3.1.32/libs/smarty.class.php';
-$smarty = new Smarty();
-global $smarty;
 
 $config = array();
 
