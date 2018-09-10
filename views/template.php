@@ -7,11 +7,6 @@
 	<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/frameworks/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/style.css">
-	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/popper.min.js"></script>
-	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/jquery.mask.js"></script>
-	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/js/script.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm navbar-light bg-light shadow">
@@ -33,5 +28,11 @@
 		</div>
 	</nav>
 	<?php $this->loadViewInTemplate($viewName, $viewData);?>
+	
+	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/popper.min.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/frameworks/jquery.mask.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL;?>assets/js/script.js"></script>
 </body>
 </html>
