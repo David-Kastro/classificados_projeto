@@ -106,7 +106,7 @@ class Anuncios extends model{
 			if($sql->rowCount() > 0){
 				$array = $sql->fetch();
 			}else{
-				header("Location: ".BASE_URL."anuncios");
+				header("Location: ".BASE_URL);
 			}
 
 			$sql = $this->db->prepare("SELECT id as id_imagem, url FROM anuncio_imagens WHERE id_anuncio = :id_anuncio");
@@ -121,7 +121,7 @@ class Anuncios extends model{
 			return $array;
 			
 		}else{
-			header("Location: ".BASE_URL."anuncios");
+			header("Location: ".BASE_URL);
 		}
 	}
 
