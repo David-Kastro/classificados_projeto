@@ -12,6 +12,7 @@ class anunciosController extends controller{
 		$anuncios = $a->getAnuncios();
 		$dados = array();
 		$dados['anuncios'] = $anuncios;
+		$dados['base_url'] = BASE_URL;
 
 		$this->loadTemplate("anuncios", $dados);
 
