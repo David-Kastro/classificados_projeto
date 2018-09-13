@@ -70,12 +70,12 @@
 							<tr>
 								<td>
 									{if not empty($anuncio.url)}
-										<a href="{$base_url}produto/open/{$anuncio.id}"><img height="80px" src="{$base_url}assets/images/anuncios/{$anuncio.url}"></a>
+										<a href="{$base_url}produto/{$anuncio.id}"><img height="80px" src="{$base_url}assets/images/anuncios/{$anuncio.url}"></a>
 									{else}
-										<a href="{$base_url}produto/open/{$anuncio.id}"><img width="100px" height="80px" src="{$base_url}assets/images/default.png"></a>
+										<a href="{$base_url}produto/{$anuncio.id}"><img width="100px" height="80px" src="{$base_url}assets/images/default.png"></a>
 									{/if}
 								</td>
-								<td style="vertical-align: middle;"><a href="{$base_url}produto/open/{$anuncio.id}">{$anuncio.titulo}</a><br><small>{$anuncio.categoria|utf8_encode|ucfirst}<small></td>
+								<td style="vertical-align: middle;"><a href="{$base_url}produto/{$anuncio.id}">{$anuncio.titulo}</a><br><small>{$anuncio.categoria|utf8_encode|ucfirst}<small></td>
 								<td style="vertical-align: middle;">R$ {$anuncio.valor|number_format:2:',':'.'}</td>
 							</tr>
 						{/foreach}

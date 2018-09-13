@@ -29,7 +29,7 @@
 							</td>
 							<td style="vertical-align: middle;"><?php echo $anuncio['titulo'];?></td>
 							<td style="vertical-align: middle;">R$ <?php echo number_format($anuncio['valor'], 2, ',', '.');?></td>
-							<td style="vertical-align: middle;"><a href="<?php echo BASE_URL;?>edit/index/<?php echo $anuncio['id']?>" class="btn btn-outline-dark">Editar</a>&nbsp&nbsp<a class="btn btn-danger" href="<?php echo BASE_URL;?>anuncios/delete/<?php echo $anuncio['id']?>">Excluir</a></td>
+							<td style="vertical-align: middle;"><a href="<?php echo BASE_URL;?>edit/<?php echo $anuncio['id']?>" class="btn btn-outline-dark">Editar</a>&nbsp&nbsp<a class="btn btn-danger" href="<?php echo BASE_URL;?>anuncios/delete/<?php echo $anuncio['id']?>">Excluir</a></td>
 						</tr>
 						<?php
 					}
