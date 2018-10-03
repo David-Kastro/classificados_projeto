@@ -115,7 +115,7 @@ class Anuncios extends model{
 			if($sql->rowCount() > 0){
 				$array["imagens"] = $sql->fetchAll();
 			}else{
-				$array["imagens"] = "";
+				$array["imagens"] = array();
 			}
 
 			return $array;
